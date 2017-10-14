@@ -1,0 +1,14 @@
+> # 4
+> abs(-15.5)
+[1] 15.5
+> round(4.483847 , 1)
+[1] 4.5
+> round(3.8)
+[1] 4
+> toupper("species")
+[1] "SPECIES"
+square_root <- sqrt(2.6)
+> round(square_root , 2)
+[1] 1.61
+> round(sqrt(2.6), 2)
+[1] 1.61
