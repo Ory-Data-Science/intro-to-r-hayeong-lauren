@@ -1,0 +1,46 @@
+FINAL WORK (CORRET)
+
+> setwd("~/GitHub/intro-to-r-hayeong-lauren")
+> #setting working directory
+> ppt_data <- read.csv("gainesville-precip.csv", header=FALSE)
+> #used to import spreadsheets
+> #header=false is when the first line is not header
+> monthly_mean_ppt <- colMeans(ppt_data)
+> #colMean is to show the means of the columns
+> plot(monthly_mean_ppt, type = "l", xlab = "month", ylab = "Mean Precipitation")
+> #type "l" is line graph
+
+
+ALL WORK (including error)
+
+> ppt_data <- read.csv("gainesville-precip.csv", header=FALSE)
+> monthly_mean_ppt <- colMeans(ppt_data)
+> plot(monthly_mean_ppt, tyep="1", xlab="Month", ylab="Mean Precipitation")
+Warning messages:
+1: In plot.window(...) : "tyep" is not a graphical parameter
+2: In plot.xy(xy, type, ...) : "tyep" is not a graphical parameter
+3: In axis(side = side, at = at, labels = labels, ...) :
+  "tyep" is not a graphical parameter
+4: In axis(side = side, at = at, labels = labels, ...) :
+  "tyep" is not a graphical parameter
+5: In box(...) : "tyep" is not a graphical parameter
+6: In title(...) : "tyep" is not a graphical parameter
+> plot(monthly_mean_ppt, type ="1", xlab="Month", ylab="Mean Precipitation")
+Error in plot.xy(xy, type, ...) : invalid plot type '1'
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+> monthly_mean_ppt <- colMeans(ppt_data)
+> plot(monthly_mean_ppt, type ="1", xlab="Month", ylab="Mean Precipitation")
+Error in plot.xy(xy, type, ...) : invalid plot type '1'
+> ppt_data <- read.csv("gainesville-precip.csv", header=FALSE)
+> #used to import spreadsheets
+> #header=false is when the first line is not header
+> monthly_mean_ppt <- colMeans(ppt_data)
+> #colMean is to show the means of the columns
+> plot(monthly_mean_ppt, type = "1", xlab + "Month", ylab = "Mean Precipitation")
+Error in xy.coords(x, y, xlabel, ylabel, log) : object 'xlab' not found
+> plot(monthly_mean_ppt, type = "1", xlab = "Month", ylab = "Mean Precipitation")
+Error in plot.xy(xy, type, ...) : invalid plot type '1'
+> plot(monthly_mean_ppt, type = "1", xlab = "month", ylab = "Mean Precipitation")
+Error in plot.xy(xy, type, ...) : invalid plot type '1'
+> plot(monthly_mean_ppt, type = "l", xlab = "month", ylab = "Mean Precipitation")
+> #type "l" is line graph
